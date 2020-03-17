@@ -52,12 +52,12 @@ result = DB[:conn].execute(sql, name)[0]
 Student.new(result[0], result[1], result[2])
 end
 
-  # def self.new_from_db(row)
-  #   id = row[0]
-  #   name = row[1]
-  #   grade = row[2]
-  #   self.new(id, name, grade)
-  # end 
+  def self.new_from_db(row)
+    id = row[0]
+    name = row[1]
+    grade = row[2]
+    self.new(id, name, grade)
+  end 
 def self.new_from_db(row)
 new_dog = self.new  # self.new is the same as running Song.new
 new_dog.id = row[0]
