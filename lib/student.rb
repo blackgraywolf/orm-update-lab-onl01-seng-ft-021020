@@ -58,6 +58,15 @@ end
     grade = row[2]
     self.new(id, name, grade)
   end 
+  
+  	 def self.new_from_db(row)
+	2. new_song = self.new  # self.new is the same as running Song.new
+	3. new_song.id = row[0]
+	4. new_song.name =  row[1]
+	5. new_song.length = row[2]
+	6. new_song  # return the newly created instance
+	7. end
+
 end
 
 
