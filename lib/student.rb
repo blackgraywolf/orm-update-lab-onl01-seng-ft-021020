@@ -66,7 +66,9 @@ end
 # new_dog  # return the newly created instance
 # end
 
-
+  def self.drop_table 
+    DB[:conn].execute("DROP TABLE IF EXISTS students")
+  end
 
 end
 
