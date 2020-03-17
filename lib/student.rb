@@ -25,10 +25,10 @@ end
 # 	sql = "UPDATE songs SET name = ?, grade = ? WHERE name = ?"
 # 	DB[:conn].execute(sql, self.name, self.grade, self.name)
 # 	end
-	 def update
-	 sql = "UPDATE songs SET name = ?, grade = ? WHERE id = ?"
-  DB[:conn].execute(sql, self.name, self.grade, self.id)
-end
+ def update
+    sql = "UPDATE students SET name = ?, grade = ? WHERE id = ?"
+    DB[:conn].execute(sql, self.name, self.grade, self.id)
+  end
 
 def save
 sql = <<-SQL
