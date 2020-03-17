@@ -63,7 +63,7 @@ new_dog = self.new  # self.new is the same as running Song.new
 new_dog.id = row[0]
 new_dog.name =  row[1]
 new_dog.breed = row[2]
-new_dog  # return the newly created instance
+#new_dog  # return the newly created instance
 end
 
 
